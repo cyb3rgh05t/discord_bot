@@ -1,7 +1,7 @@
 FROM node:21
 
 LABEL maintainer=cyb3rgh05t
-LABEL org.opencontainers.image.source https://github.com/cyb3rgh05t/discord_bot
+LABEL org.opencontainers.image.source https://github.com/cyb3rgh05t/discord-bot
 
 # Create the bot's directory
 WORKDIR /app/bot/
