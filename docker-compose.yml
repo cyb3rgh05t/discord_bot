@@ -18,8 +18,8 @@ services:
       - mongodb_data:/data/db
 
   discordbot:
-    hostname: "discord_bot"
-    container_name: "discord_bot"
+    hostname: "discord-bot"
+    container_name: "discord-bot"
     environment:
       - "PGID=1000"
       - "PUID=1000"
@@ -35,7 +35,7 @@ services:
     tty: true # docker run -t
     restart: "unless-stopped"
     volumes:
-      - "opt/appdata/disocrd_bot/:/app/bot/src/config:rw"
+      - "opt/appdata/disocrd-bot/:/app/bot/src/config:rw"
     depends_on:
       - mongodb
     links:
