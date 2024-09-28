@@ -18,8 +18,8 @@ services:
       - mongodb_data:/data/db
 
   discordbot:
-    hostname: "mr_streamnet"
-    container_name: "mr_streamnet"
+    hostname: "discord_bot"
+    container_name: "discord_bot"
     environment:
       - "PGID=1000"
       - "PUID=1000"
@@ -30,12 +30,12 @@ services:
       - "no-new-privileges:true"
     labels:
       - "dockupdater.enable=false"
-    image: "ghcr.io/cyb3rgh05t/mr.streamnet_lite:latest"
+    image: "ghcr.io/cyb3rgh05t/discord-bot:latest"
     stdin_open: true # docker run -i
     tty: true # docker run -t
     restart: "unless-stopped"
     volumes:
-      - "opt/appdata/mr.streamnet/:/app/bot/src/config:rw"
+      - "opt/appdata/disocrd_bot/:/app/bot/src/config:rw"
     depends_on:
       - mongodb
     links:
