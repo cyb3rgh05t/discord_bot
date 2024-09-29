@@ -34,6 +34,28 @@ module.exports = {
    * @param {Guild} guild
    */
   async execute(client, member, guild) {
+	const asciiLogo = `
+      @@@@@@@  @@@ @@@  @@@@@@@   @@@@@@   @@@@@@@    @@@@@@@@  @@@  @@@   @@@@@@@@   @@@@@@@  @@@@@@@  
+@@@@@@@@  @@@ @@@  @@@@@@@@  @@@@@@@  @@@@@@@@  @@@@@@@@@  @@@  @@@  @@@@@@@@@@  @@@@@@@  @@@@@@@  
+!@@       @@! !@@  @@!  @@@      @@@  @@!  @@@  !@@        @@!  @@@  @@!   @@@@  !@@        @@!    
+!@!       !@! @!!  !@   @!@      @!@  !@!  @!@  !@!        !@!  @!@  !@!  @!@!@  !@!        !@!    
+!@!        !@!@!   @!@!@!@   @!@!!@   @!@!!@!   !@! @!@!@  @!@!@!@!  @!@ @! !@!  !!@@!!     @!!    
+!!!         @!!!   !!!@!!!!  !!@!@!   !!@!@!    !!! !!@!!  !!!@!!!!  !@!!!  !!!  @!!@!!!    !!!    
+:!!         !!:    !!:  !!!      !!:  !!: :!!   :!!   !!:  !!:  !!!  !!:!   !!!      !:!    !!:    
+:!:         :!:    :!:  !:!      :!:  :!:  !:!  :!:   !::  :!:  !:!  :!:    !:!      !:!    :!:    
+ ::: :::     ::     :: ::::  :: ::::  ::   :::   ::: ::::  ::   :::  ::::::: ::  :::: ::     ::    
+ :: :: :     :     :: : ::    : : :    :   : :   :: :: :    :   : :   : : :  :   :: : :      :     
+                                                                                                   
+    `;
+     
+    client.logger.log(asciiLog);  // Log the ASCII logo
+	client.logger.log('=====================================================')
+    client.logger.log(`Discord Bot Version 1.0.0`)
+    client.logger.log(`Author: cyb3rgh05t https://github.com/cyb3rgh05t/`)
+    client.logger.log(`=====================================================`)
+    client.logger.log(`To support this project, please visit`)
+    client.logger.log(`https://github.com/cyb3rgh05t/discord-bot`)
+    client.logger.log(`=====================================================`)
     client.logger.log(`[BOT] Checking Client....`, "debug");
     client.logger.log(`[BOT] Client is starting....`, "debug");
     client.logger.log(
