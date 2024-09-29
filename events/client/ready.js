@@ -48,7 +48,7 @@ module.exports = {
                                                                                                    
     `;
      
-    client.logger.log(asciiLog);  // Log the ASCII logo
+    client.logger.log(asciiLogo);  // Log the ASCII logo
 	client.logger.log('=====================================================')
     client.logger.log(`Discord Bot Version 1.0.0`)
     client.logger.log(`Author: cyb3rgh05t https://github.com/cyb3rgh05t/`)
