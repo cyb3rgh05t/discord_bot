@@ -54,8 +54,8 @@ module.exports = {
     client.logger.log(`To support this project, please visit`)
     client.logger.log(`https://github.com/cyb3rgh05t/discord-bot`)
     client.logger.log(`=====================================================`)
-    client.logger.log(`[BOT] Checking Client....`, "debug");
-    client.logger.log(`[BOT] Client is starting....`, "debug");
+    client.logger.log(`[BOT] Checking Client....`, "log");
+    client.logger.log(`[BOT] Client is starting....`, "log");
     client.logger.log(
       `[DISCORD_API] ${client.user.username} is ready with ${client.guilds.cache.size} server!`,
       "log"
