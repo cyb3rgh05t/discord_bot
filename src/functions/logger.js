@@ -7,34 +7,34 @@ module.exports = class Logger {
 		switch (type) {
 
 			case "log": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.magentaBright(type.toUpperCase())}] | ${chalk.magentaBright(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "warn": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.yellow(type.toUpperCase())}] | ${chalk.yellow(content)}`);
+				return console.log(`[${chalk.yellow(type.toUpperCase())}] | ${chalk.yellow(content)}`);
 			}
 			case "error": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.red(type.toUpperCase())}] | ${chalk.red(content)}`);
+				return console.log(`[${chalk.red(type.toUpperCase())}] | ${chalk.red(content)}`);
 			}
 			case "debug": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.blueBright(type.toUpperCase())}] | ${chalk.blueBright(content)}`);
+				return console.log(`[${chalk.blueBright(type.toUpperCase())}] | ${chalk.blueBright(content)}`);
 			}
 			case "cmd": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "event": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "buttons": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "prefix": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "modals": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			case "ready": {
-				return console.log(`[${chalk.gray(date)}]: [${chalk.green(type.toUpperCase())}] | ${chalk.green(content)}`);
+				return console.log(`[${type.toUpperCase()}] | ${content}`);
 			}
 			default:
 				throw new TypeError("Logger type must be either warn, debug, log, ready, cmd, buttons, modals or error.");
